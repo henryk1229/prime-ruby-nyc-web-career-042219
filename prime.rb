@@ -5,6 +5,7 @@ def prime?(integer)
      (2..integer).to_a.all? do | n |
       integer % n != 0
     end
+    true 
   end
 end
   
