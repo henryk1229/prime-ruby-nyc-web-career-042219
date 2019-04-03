@@ -5,7 +5,7 @@ def prime?(integer)
     array = (2..integer).to_a 
     array.each do | n |
       integer % n 
-      (integer % n != 0) ? true : false 
+      integer % n != 0 ? true : false 
     end
   end
 end
