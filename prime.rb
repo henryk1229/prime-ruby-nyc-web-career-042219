@@ -4,12 +4,9 @@ def prime?(integer)
   else
     (2..integer).to_a do | n |
       integer % n 
-      if integer % n == 0 
-        false 
-      end
+      integer % n != 0 ? true : false 
     end
   end
 end
-  
   
   
