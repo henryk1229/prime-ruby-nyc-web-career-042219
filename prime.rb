@@ -7,6 +7,7 @@ def prime?(integer)
       integer % n 
       if integer % n == 0 
         false 
+      end
     end
     true 
   end
