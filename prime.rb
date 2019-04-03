@@ -2,10 +2,8 @@ def prime?(integer)
   if integer <= 1  
     false
   else
-    array = (2..integer).to_a 
-    array.each do | n |
-      integer % n 
-      integer % n != 0 ? true : false 
+     (2..integer).to_a.all? do | n |
+      integer % n != 0
     end
   end
 end
